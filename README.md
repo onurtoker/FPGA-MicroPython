@@ -10,7 +10,7 @@ MicroPython on Digilent Arty A7-100T FPGA board
 </p>
 
 <p align="center">
-  MicroPython on Digilent Arty A7-100T FPGA board with a VT100 terminal box. If you don't have a VT100 terminal box, you can use your computer and PuTTY.
+  MicroPython on a Digilent Arty A7-100T FPGA board with a VT100 terminal box. If you don't have a VT100 terminal box, you can use your computer and PuTTY.
 </p>
 
 I have tested MicroPython on a bare-metal RISC-V RV32I system implemented on an FPGA board. The processor is RV32I with no extensions, RAM is 300K, and the clock speed is 100 MHz. There are only two I/O peripherals, a UART RX/TX and a GPIO. See the Verilog code for full details. No Xilinx specific stuff is used except for the clock domain synchronizers.
