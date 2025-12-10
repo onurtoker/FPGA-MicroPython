@@ -23,7 +23,8 @@ The UART RX/TX and FIFO buffers are from Pong P. Chu's book "FPGA Prototyping by
 
 To build the MicroPython from source, you will need the GCC compiler. I used the following link to download the pre-compiled toolchain, https://github.com/stnolting/riscv-gcc-prebuilt/releases/download/rv32i-131023/riscv32-unknown-elf.gcc-13.2.0.tar.gz
 
-I have used Ciro Cattuto's RISC-V emulator and build scripts, https://github.com/ccattuto/riscv-python. Ciro's repo has really detailed information. I have only edited the linker script for 300K RAM and UART RX/TX behaviour. Changed the board name, and added an optional startup script for peek32/poke32.
+I used Ciro Cattuto's RISC-V emulator and build scripts, https://github.com/ccattuto/riscv-python. Ciro's repo has really detailed information. I only edited the linker script for 300K RAM and revised mphalport_uart.c. 
+Finally, changed the board name, and added an optional startup script for peek32/poke32. Ciro's repo has 3 build options, and I used MODE=REPL_UART.
 
 I am also sharing the HEX file that can be used in a Vivado project, plus the pre-built bin image for programming the FPGA.
 
