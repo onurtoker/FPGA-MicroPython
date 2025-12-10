@@ -25,7 +25,7 @@ To build the MicroPython from source, you will need the GCC compiler. I used the
 
 I have used Ciro Cattuto's RISC-V emulator and build scripts, https://github.com/ccattuto/riscv-python. Ciro's repo has really detailed information. I have only edited the linker script for 300K RAM and UART RX/TX behaviour. Changed the board name, and added an optional startup script for peek32/poke32.
 
-I am also sharing the HEX file that can be used in a Vivado project, plus prebuilt bin/bit images for programming the FPGA.
+I am also sharing the HEX file that can be used in a Vivado project, plus the pre-built bin image for programming the FPGA.
 
 ## References
 1. PicoRV32 - A Size-Optimized RISC-V CPU, https://github.com/YosysHQ/picorv32
